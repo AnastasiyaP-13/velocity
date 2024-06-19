@@ -272,15 +272,17 @@ p {
 /*-----TABS------*/
 
 .tab-section {
+    
 
 }
 
 
-.tabs {
+.tabs { 
 
 }
 
-.tabs-nav {
+button{
+    margin-bottom: 50px;
 
 }
 
@@ -305,10 +307,20 @@ p {
 margin-left: 15px;
 }
 
-.tab-item {
-
+.tabs_item img {
+    margin-bottom: 16px;
 }
 
-.task-desc {
+.tabs_item h4{
+    margin-bottom: 15px;
+    color: #676770;
+    font-size: 31px;  
+    line-height: 36px; 
+    
+}
 
+p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 } 
