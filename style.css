@@ -17,10 +17,9 @@ p {
     line-height: 1.8;
 }
 
-/*.hide {
-    display: none;
-    !important;
-}*/
+.hide {
+    display: none !important;
+}
 
 .title-wrapper {
     margin-bottom: 60px;
@@ -205,15 +204,18 @@ p {
 
 .about.cards-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
 
-.about.card {
-    padding: 3px 15px 20px;
-    width: 30px;
+.about .card {
+    padding: 35px 15px 20px;
+    width: auto;
+    max-width: 300px;
     border-radius: 5px;
     border: 1px solid #DCEBF7;
-    width: 32%;
 }
 
 .about.card img {
@@ -242,7 +244,6 @@ p {
     justify-content: space-between;
 }
 
-
 .services .card {
     width: 45%;
 }
@@ -265,23 +266,19 @@ p {
 
 
 .services .link {
+
     margin-top: 5px;
 }
 
 
 /*-----TABS------*/
 
-.tab-section {
-    
-
-}
+.tab-section {}
 
 
-.tabs { 
+.tabs {}
 
-}
-
-button{
+button {
     margin-bottom: 50px;
 
 }
@@ -289,12 +286,12 @@ button{
 .tabs_nav button {
     padding: 0 30px;
     font-size: 16px;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #92A0AD;
     border-radius: 4px;
-    
+
 
 }
 
@@ -303,70 +300,72 @@ button{
 
 }
 
-.tabs_nav button + button {
-margin-left: 15px;
+.tabs_nav button+button {
+    margin-left: 15px;
 }
 
 .tabs_item img {
     margin-bottom: 16px;
 }
 
-.tabs_item h4{
+.tabs_item h4 {
     margin-bottom: 15px;
     color: #676770;
-    font-size: 31px;  
-    line-height: 36px; 
-    
+    font-size: 31px;
+    line-height: 36px;
+
 }
 
 p {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-} 
+}
 
 
 
 
 /*-----------FOOTER----------*/
-.footer {
+.footer {}
 
-}
-
-.footer_desc{
+.footer_desc {
     padding: 35px 0;
 }
 
 h4 {
-color: #676770; 
-font-size: 18px;  
-text-transform: uppercase; 
-line-height: 20px; 
-letter-spacing: 4px;
-margin-bottom: 25px;
+    color: #676770;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
 }
 
 .footer_desc-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 40px;
 
 }
-.footer_desc-container > * {
+
+.footer_desc-container>* {
     width: 30%;
+    min-width: 220px;
 }
 
 
 .footer_desc a {
-color: #668CAD;
-font-size: 13px;
-line-height: 20px; 
-/*border-bottom: 1px solid #192024;*/
+    color: #668CAD;
+    font-size: 13px;
+    line-height: 20px;
+    /*border-bottom: 1px solid #192024;*/
 }
 
-.footer_desc li{
-height: 30px;
-position: relative;
+.footer_desc li {
+    height: 30px;
+    position: relative;
 }
 
 .footer_desc li::before {
@@ -391,14 +390,10 @@ position: relative;
 footer-social img {
     margin-right: 6px;
 }
-.footer_about {
-    
 
-}
+.footer_about {}
 
-.footer_links {
-
-}
+.footer_links {}
 
 .footer_social img {
     width: 20px;
@@ -407,13 +402,110 @@ footer-social img {
 
 
 }
+
 .footer_copy {
     text-align: center;
     padding: 40px 0;
     background-color: #383838;
-    
+
 }
-.footer_copy p{
+
+.footer_copy p {
     color: #9E9E9E
 }
+@media (max-weight: 829px) {
+    .footer_desc-container {
+        justify-content: space-evenly;
+    }
+    .footer_desc h4 {
+        margin-bottom: 10px;
+    }
+    .footer_desc {
+        padding-top: 0;
+    }
+}
+@media (max-width: 660px) {
+
+    .tabs_nav {
+        margin-bottom: 50px;
+    }
+
+    .tabs_nav button {
+        display: block;
+        margin: 0 auto;
+
+        padding: 10px 30px;
+    }
+
+    .tabs_nav button+button {
+        
+        margin-top: 10px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .services .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+
+    .services .card {
+        width: 80%;
+    }
+
+
+    .title-wrapper {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 400px) {
+    .header-nav li+li {
+        margin-left: 15px;
+    }
+
+    .welcome-heading {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .welcome_links a {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .welcome_links>*+* {
+
+        margin: 0;
+        margin-top: 20px;
+
+    }
+
+    .common-section {}
+
+    body {
+        font-size: 12 px;
+    }
+
+    .about.card h4 {
+        font-size: 16px;
+    }
+
+    .services .card .link {
+        font-size: 14px;
+    }
+
+    .tabs_item h4 {
+        font-size: 24px;
+    }
+
+}
+
+
+
+
 
