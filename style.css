@@ -104,15 +104,15 @@ p {
     transition: color 0.2s;
 }
 
-.header_nav a {}
 
 .header_nav a:hover {
+
     color: #0082F3
 }
 
 
 /*-------------MAIN----------*/
-.main {}
+
 
 
 
@@ -197,7 +197,6 @@ p {
 }
 
 /*----------ABOUT (what we do)--------*/
-.about {}
 
 
 
@@ -207,7 +206,6 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-
 }
 
 .about .card {
@@ -237,7 +235,11 @@ p {
 }
 
 
-*/-------------ABOUT WHAT WE DO----------*/ .services {}
+*/-------------ABOUT WHAT WE DO----------*/
+
+.services {
+    /* flag */
+}
 
 .services .cards-wrapper {
     display: flex;
@@ -255,7 +257,7 @@ p {
 .services .card h4 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 40px;
     line-height: 1.5;
     letter-spacing: 7px;
@@ -267,16 +269,13 @@ p {
 
 .services .link {
 
-    margin-top: 5px;
+    margin-top: 17px;
 }
 
 
 /*-----TABS------*/
 
-.tab-section {}
 
-
-.tabs {}
 
 button {
     margin-bottom: 50px;
@@ -324,6 +323,7 @@ button {
 }
 
 .tabs_item h4 {
+    text-transform: none;
     margin-bottom: 15px;
     color: #676770;
     font-size: 31px;
@@ -341,7 +341,7 @@ p {
 
 
 /*-----------FOOTER----------*/
-.footer {}
+
 
 .footer_desc {
     padding: 35px 0;
@@ -406,9 +406,7 @@ footer-social img {
     margin-right: 6px;
 }
 
-.footer_about {}
 
-.footer_links {}
 
 .footer_social img {
     width: 20px;
@@ -505,7 +503,6 @@ footer-social img {
 
     }
 
-    .common-section {}
 
     body {
         font-size: 12 px;
